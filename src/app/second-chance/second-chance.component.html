@@ -1,0 +1,30 @@
+<div class="test">
+  <div
+    class="container d-flex justify-content-center align-items-center vh-100"
+  >
+    <div class="card text-center p-3 custom-card">
+      <div class="card-body">
+        <h5>Me dá uma <strong>segunda chance</strong>?</h5>
+        <div class="icons">
+          <app-bouquet-icon></app-bouquet-icon>
+          <app-pleading-face></app-pleading-face>
+        </div>
+        <p>
+          Gosto muito de trocar idéia contigo, e não queria que isso parasse por
+          uma besteira.
+        </p>
+        <div class="buttons d-flex">
+          <button class="btn btn-light" (click)="openModal()">Motivos</button>
+          <button class="btn btn-success" (click)="openWhatsapp()">Sim</button>
+          <button
+            class="btn btn-danger"
+            (mouseover)="moveNoButton($event)"
+            [disabled]="noDisabled"
+          >
+            Não
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
